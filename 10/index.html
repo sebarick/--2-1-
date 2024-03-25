@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Product Information Form</h2>
+        <div class="product-form">
+            <input type="text" class="product-input" id="nameInput" placeholder="Product Name">
+            <input type="text" class="product-input" id="infoInput" placeholder="Info">
+            <input type="text" class="product-input" id="quantityInput" placeholder="Quantity">
+            <input type="text" class="product-input" id="priceInput" placeholder="Price">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="addProduct()" class="product-button">Add Product</button>
+        </div>
+        <div class="product-list" id="productList"></div>
+    </div>
+</body>
+
+</html>
