@@ -1,0 +1,90 @@
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh; /* исправлено */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: sans-serif;
+    background: rgb(105,34,195);
+    background: linear-gradient(0deg, rgba(185,34,195,1) 0%, rgba(31,180,255,1) 100%);
+}
+
+.container {
+    width: 100%; /* исправлено */
+    max-width: 350px; 
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.title { /* исправлено */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+    
+.first-field {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.converter-field label {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    display: inline-block; 
+    opacity: 0.35; /* исправлено */
+    font-weight: 600;
+}
+
+.converter-input { /* исправлено */
+    width: 100%; 
+    height: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 7px;
+    padding: 0 7px; /* исправлено */
+}
+
+.converter-variable {
+    width: 100%; 
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}  
+    
+.converter-variable .converter-field { /* исправлено */
+    width: 50%;
+}
+
+.converter-field select {
+    width: 100%;
+    height: 35px;
+}
+    
+#convert {
+    width: 100%;
+    height: 35px; 
+    border: none;
+    background-color: rgb(105,34,195);
+    font-size: 18px; 
+    color: #fff;
+    border-radius: 7px;
+    padding: 7px; /* исправлено */
+}
+    
+#result {
+    width: 100%;
+    padding: 12px; 
+    margin-top: 20px;
+    border: 2px solid rgb(105,34,195); /* исправлено */
+    border-radius: 7px;
+    background-color: rgba(165,34,195,.25);
+    color: rgb(105,34,195);
+}
