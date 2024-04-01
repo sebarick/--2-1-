@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h1 class="title">Конвертер</h1>
+            <div class="converter-field first-field">
+                <label for="">Введите значение</label>
+                <input type="text" class="converter-input" placeholder="53">
+            </div>
+            <div class="converter-variable">
+                <div class="converter-field">
+                    <label for="from">Исходное значение</label>
+                    <select id="from">
+                        <option value="km">Километры</option>
+                        <option value="m">Метры</option>
+                        <option value="cm">Сантиметры</option>
+                    </select>
+                </div>
+                <div class="converter-field">
+                    <label for="to">Преобразованное значение</label>
+                    <select id="to">
+                        <option value="km">Километры</option>
+                        <option value="m">Метры</option>
+                        <option value="cm">Сантиметры</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="convert()" id="convert">Конвертировать</button>
+            <div id="result" style="display: none;"></div>
+        </div>
+    </div>
+</body>
+</html>
