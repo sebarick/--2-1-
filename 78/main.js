@@ -27,9 +27,9 @@ const getData = () => {
 
     if (storeData && storeData.length > 0) {
         storeData.forEach((userData, index) => {
-            resultData.innerHTML += `<li>Название: ${userData.title}</li>`;
-            resultData.innerHTML += `<li>Содержание: ${userData.content}</li>`;
-            resultData.innerHTML += `<li>Автор: ${userData.author}</li>`;
+            resultData.innerHTML += `<li>Заголовок: ${userData.title}</li>`;
+            resultData.innerHTML += `<li>Описание: ${userData.content}</li>`;
+            resultData.innerHTML += `<li>Источник: ${userData.source}</li>`;
             resultData.innerHTML += `<li>Дата публикации: ${userData.publishDate}</li>`;
             resultData.innerHTML += `<button onclick="deleteData(${index})">Удалить</button>`;
             resultData.innerHTML += `<hr><br>`;
